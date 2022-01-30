@@ -8,6 +8,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 
 namespace BraintreeASPExampleTests.integration
 {
@@ -28,8 +29,8 @@ namespace BraintreeASPExampleTests.integration
         public void TestInitialize()
         {
             StartIIS();
-            driver.Manage().Timeouts().SetPageLoadTimeout(timeoutForgiving);
-            driver.Manage().Timeouts().ImplicitlyWait(timeoutForgiving);
+      //      driver.Manage().Timeouts().SetPageLoadTimeout(timeoutForgiving);
+      //      driver.Manage().Timeouts().ImplicitlyWait(timeoutForgiving);
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
         }
 

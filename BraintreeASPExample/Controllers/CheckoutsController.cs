@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace BraintreeASPExample.Controllers
 {
     public class CheckoutsController : Controller
@@ -32,7 +33,7 @@ namespace BraintreeASPExample.Controllers
         public ActionResult Create()
         {
             var gateway = config.GetGateway();
-            Decimal amount = 9.99M;
+            System.Decimal amount = 9.99M;
 
             try
             {
