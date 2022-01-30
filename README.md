@@ -1,6 +1,8 @@
 ﻿# Braintree ASP.NET Example
 An example Braintree integration for ASP.NET.
 
+MSIH is extending Braintree ASP.NET Example to include PayPal, Venmo, Apply Pay and Google Pay
+
 ## Setup Instructions
 These instructions assume you are using Visual Studio Community 2017. This has not been tested in Xamarin Studio, or other versions of Visual Studio. This project is also set up
 to use NuGet package restore, so all dependencies should be automatically installed.
