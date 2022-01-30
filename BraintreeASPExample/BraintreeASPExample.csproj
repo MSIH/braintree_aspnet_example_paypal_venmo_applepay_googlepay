@@ -155,9 +155,6 @@
     <Content Include="App_Themes\images\pseudoshop.svg" />
     <Content Include="App_Themes\images\success.svg" />
     <Content Include="App_Themes\javascript\demo.js" />
-    <Content Include="App_Themes\javascript\response.js" />
-    <Content Include="App_Themes\javascript\vendor\jquery-2.1.4.min.js" />
-    <Content Include="App_Themes\javascript\vendor\jquery.lettering-0.6.1.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -213,6 +210,9 @@
     <Content Include="App_Themes\fonts\open-sans\OpenSans-Semibold-webfont.eot" />
     <Content Include="App_Themes\fonts\open-sans\OpenSans-Semibold-webfont.ttf" />
     <Content Include="App_Themes\fonts\open-sans\OpenSans-Semibold-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\BraintreeASPExample20220130085536 - Web Deploy.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -17,7 +17,7 @@ namespace BraintreeASPExample.Controllers
                                                                                     TransactionStatus.SETTLED,
                                                                                     TransactionStatus.SETTLING,
                                                                                     TransactionStatus.SETTLEMENT_CONFIRMED,
-                                                                                    TransactionStatus.SETTLEMENT_PENDING,
+                                                                                   TransactionStatus.SETTLEMENT_PENDING,
                                                                                     TransactionStatus.SUBMITTED_FOR_SETTLEMENT
                                                                                 };
 
@@ -32,7 +32,7 @@ namespace BraintreeASPExample.Controllers
         public ActionResult Create()
         {
             var gateway = config.GetGateway();
-            Decimal amount;
+            Decimal amount = 9.99M;
 
             try
             {
