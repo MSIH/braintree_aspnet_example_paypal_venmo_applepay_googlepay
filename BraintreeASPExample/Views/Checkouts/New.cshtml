@@ -38,13 +38,26 @@
 
     braintree.dropin.create({
         authorization: client_token,
-        container: '#bt-dropin'
- 
-    }, function (createErr, instance) {
+        container: '#bt-dropin',
+        applePay: {
+            displayName: 'Merchant Name',
+            paymentRequest: {
+                label: 'Localized Name',
+                total: '10.00'
+            },
+            requiredBillingContactFields: ["postalAddress"]
+        },
+        paypal: {
+            flow: 'vault'
+        },
+        paypalCredit: {
+            flow: 'vault'
+        },
+        venmo: {}
+    }, function (err, dropinInstance) {
         form.addEventListener('submit', function (event) {
             event.preventDefault();
-
-            instance.requestPaymentMethod(function (err, payload) {
+            dropinInstance.requestPaymentMethod(function (err, payload) {
                 if (err) {
                     console.log('Error', err);
                     return;
